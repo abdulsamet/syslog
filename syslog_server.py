@@ -1,9 +1,9 @@
 from socket import *
 
-host = "10.10.10.10"
+server = "10.10.10.10"
 port = 514
 buf = 8192*4
-addr = (host,port)
+addr = (server,port)
 
 TCPSock = socket(AF_INET,SOCK_DGRAM)
 TCPSock.bind(addr)
