@@ -8,7 +8,7 @@ addr = (server,port)
 TCPSock = socket(AF_INET,SOCK_DGRAM)
 TCPSock.bind(addr)
 
-db=open("receive.log", "w")
+#db=open("receive.log", "w")
 
 while 1:
     data,addr = TCPSock.recvfrom(buf)
@@ -20,3 +20,4 @@ while 1:
 		#print ("Message: ", data, file=db, flush=True)
 
 TCPSock.close()
+#db.close()
