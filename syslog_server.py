@@ -10,7 +10,7 @@ TCPSock.bind(addr)
 
 #db=open("receive.log", "w")
 
-while 1:
+while True:
     data,addr = TCPSock.recvfrom(buf)
     if not data:
         print ("No response from systems!")
